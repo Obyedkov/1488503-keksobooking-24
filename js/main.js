@@ -1,8 +1,9 @@
 function getRandomNumber(min, max) {
-  return Math.floor(min + (Math.random() * max));
+  let rand = Math.floor(min + (Math.random() * max));
+  return rand.toFixed(2);
 }
 
-console.log(getRandomNumber(1, 9.002220));
+console.log(getRandomNumber(1, 20.99));
 
 
 //Случайное целое число от min до max
