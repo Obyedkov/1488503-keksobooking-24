@@ -55,4 +55,7 @@ function getOffer() {
 }
 const  offer = getOffer();
 console.log(offer);
+
+const addFormDisabled = document.getElementsByClassName('ad-form');
+addFormDisabled.disabled = false;
 debugger;
