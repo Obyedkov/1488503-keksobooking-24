@@ -1,4 +1,4 @@
-import {CHECKIN, CHECKOUT, FEATURES, PHOTOS, TYPES} from '../js/const.js';
+import {CHECKIN, CHECKOUT, FEATURES, PHOTOS, TYPES, fieldsets} from '../js/const.js';
 import {getRandomPositiveInteger} from '../js/utils/get-random-positive-integer.js';
 import {getRandomPositiveFloat} from '../js/utils/get-random-positive-float.js';
 
@@ -55,7 +55,9 @@ function getOffer() {
 }
 const  offer = getOffer();
 console.log(offer);
-
-const addFormDisabled = document.getElementsByClassName('ad-form');
-addFormDisabled.disabled = false;
+for (let fieldset of fieldsets){
+  fieldset.setAttribute('disabled', 'disabled');
+}
+const adForm = document.querySelector('.ad-form');
+adForm.classList.add('map__filters');
 debugger;
