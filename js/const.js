@@ -6,4 +6,4 @@ export const PHOTOS = ['https://assets.htmlacademy.ru/content/intensive/javascri
   'https://assets.htmlacademy.ru/content/intensive/javascript-1/keksobooking/brandon-hoogenboom-SNxQGWxZQi0.jpg',
   'https://assets.htmlacademy.ru/content/intensive/javascript-1/keksobooking/claire-rendall-b6kAwr1i0Iw.jpg',
 ];
-export const fieldsets = document.querySelectorAll('.ad-form fieldset');
+
