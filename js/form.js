@@ -3,7 +3,7 @@ const adForm = document.querySelector('.ad-form');
 
 function enabledForm() {
   for (const fieldset of fieldsets) {
-    fieldset.remove('disabled');
+    fieldset.removeAttribute('disabled');
   }
   adForm.classList.remove('ad-form--disabled');
 }
